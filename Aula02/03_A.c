@@ -15,8 +15,10 @@ string recebe_disciplina_aluno();
 float recebe_nota_1();
 float recebe_nota_2();
 
-int main(int argc, char *argv[]){
-    struct cadastro {
+int main(int argc, char *argv[])
+{
+    struct cadastro
+    {
         string nome;
         string disciplina;
         float nota_1;
@@ -38,21 +40,24 @@ int main(int argc, char *argv[]){
     return 0;
 }
 
-string recebe_nome_aluno() {
+string recebe_nome_aluno()
+{
     string nome_recebido;
     cout << "Digite o nome do aluno: ";
     cin >> nome_recebido;
     return nome_recebido;
 }
 
-string recebe_disciplina_aluno() {
+string recebe_disciplina_aluno()
+{
     string disciplina;
     cout << "Digite a disciplina cursada: ";
     cin >> disciplina;
     return disciplina;
 }
 
-float recebe_nota_1() {
+float recebe_nota_1()
+{
     string nota;
     float nota_1;
     cout << "Digite a nota do aluno: ";
@@ -60,7 +65,8 @@ float recebe_nota_1() {
     return nota_1;
 }
 
-float recebe_nota_2() {
+float recebe_nota_2()
+{
     string nota;
     float nota_2;
     cout << "Digite a nota do aluno: ";
